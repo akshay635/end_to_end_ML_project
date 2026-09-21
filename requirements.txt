@@ -1,0 +1,17 @@
+pandas 
+numpy
+matplotlib
+seaborn 
+scikit-learn
+xgboost
+catboost
+joblib
+json5
+streamlit
+python-dotenv
+requests
+fastapi
+flask
+docker
+kubernetes
+jenkins
