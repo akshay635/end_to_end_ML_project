@@ -8,28 +8,33 @@
   },
 
 'data_validation': {
+    'root_dir': 'artifacts/data_validation',
     'schema_file_path': 'config/schema.yaml',
-    'data_file': 'artifacts/data_ingestion/data.csv',
+    'data_file': 'artifacts/data_ingestion/loan_data.csv',
     'report_file_path': 'artifacts/data_validation/report.yaml',
     'report_page_file_path': 'artifacts/data_validation/report.html'
   },
 
 'data_transformation': {
+    'root_dir': 'artifacts/data_transformation',
     'transformed_train_file_path': 'artifacts/data_transformation/transformed_train.csv',
     'transformed_test_file_path': 'artifacts/data_transformation/transformed_test.csv'
   },
 
-'feature_engineering': {
-  'transformed_train_file_path': 'artifacts/data_transformation/transformed_train.csv',
-  'transformed_test_file_path': 'artifacts/data_transformation/transformed_test.csv'
-  },
-
 'model_trainer': {
-    'trained_model_file_path': 'artifacts/model_trainer/model.pkl',
+    'root_dir': 'artifacts/model_trainer',
+    'param_file_path': 'config/params.yaml',
+    'model_name': 'model.pkl',
+    'training_data_file_path': 'artifacts/data_transformation/transformed_train.csv',
+    'testing_data_file_path': 'artifacts/data_transformation/transformed_test.csv',
+    'model_file_path': 'artifacts/model_trainer/model.pkl',
   },
 
 'model_evaluation': {
-    'model_evaluation_file_path': 'artifacts/model_evaluation/evaluation.yaml',
+    'root_dir': 'artifacts/model_evaluation',
+    'report_file_path': 'artifacts/model_evaluation/report.yaml',
+    'model_evaluation_file_path': 'artifacts/model_evaluation/evaluation.json',
+    'model_trainer_file_path': 'artifacts/model_trainer/model.pkl'
   },
 
 
