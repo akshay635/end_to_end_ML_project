@@ -28,5 +28,21 @@
     'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
     'degree': 3,
     'gamma': ['scale', 'auto']
+  },
+
+  'XGBoost': {
+    'n_estimators': 100,
+    'max_depth': 3,
+    'learning_rate': 0.1,
+    'subsample': 1.0,
+    'colsample_bytree': 1.0
+  },
+
+  'CatBoost': {
+    'iterations': 1000,
+    'learning_rate': 0.1,
+    'depth': 6,
+    'l2_leaf_reg': 3,
+    'border_count': 32
   }
 }
