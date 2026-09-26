@@ -1,0 +1,35 @@
+"artifacts_root": "artifacts",
+
+'data_ingestion': {
+    'source_bucket_name': 'mydataakshay-25',
+    'source_object_name': 'lending_club_loan_two.csv',
+    'local_data_dir': 'artifacts/data_ingestion',
+    'local_data_file': 'artifacts/data_ingestion/loan_data.csv',
+  },
+
+'data_validation': {
+    'schema_file_path': 'config/schema.yaml',
+    'data_file': 'artifacts/data_ingestion/data.csv',
+    'report_file_path': 'artifacts/data_validation/report.yaml',
+    'report_page_file_path': 'artifacts/data_validation/report.html'
+  },
+
+'data_transformation': {
+    'transformed_train_file_path': 'artifacts/data_transformation/transformed_train.csv',
+    'transformed_test_file_path': 'artifacts/data_transformation/transformed_test.csv'
+  },
+
+'feature_engineering': {
+  'transformed_train_file_path': 'artifacts/data_transformation/transformed_train.csv',
+  'transformed_test_file_path': 'artifacts/data_transformation/transformed_test.csv'
+  },
+
+'model_trainer': {
+    'trained_model_file_path': 'artifacts/model_trainer/model.pkl',
+  },
+
+'model_evaluation': {
+    'model_evaluation_file_path': 'artifacts/model_evaluation/evaluation.yaml',
+  },
+
+
